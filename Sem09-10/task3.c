@@ -96,7 +96,7 @@ int main() {
         exit(-1);
       }
 
-      printf("{ребенок %d} read from pipe: %s\n", i, message);
+      printf("[ребенок %d] прочитано из pipe: %s\n", i, message);
 
       size = write(fd[1], "Это пишет ребенок!", 16);
       if (size != 16) {
